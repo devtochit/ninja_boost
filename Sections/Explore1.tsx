@@ -36,22 +36,25 @@ function Explore() {
     <div className="container">
       <div className="z-20 text-center">
         <div className="flex flex-col gap-2 items-center justify-center">
-          <img src="/imgs/section.svg" width={`1.4px`} />
-          <PrimaryButton
-            text="Runtime"
-            icon={<img src="/imgs/runtime.png" width="25" />}
-            size="middle"
-          />
+          <img src="/Logo/section.svg" width={`1.4px`} />
 
-          <Title className="mt-4 text-48">Run the world</Title>
+          {/* <PrimaryButton
+            text="Runtime"
+            icon={<img src="/Logo/runtime.png" width="25" />}
+            size="middle"
+          /> */}
+
+          {/* <Title className="mt-4 text-48">Run the world</Title> */}
+
           <p className="font-22 max-w-screen-md mx-auto">
             Using a binary for each platform and chip is the past. Rise above
             with lightweight containerized apps that simply run everywhere.
           </p>
         </div>
+        
       </div>
 
-      <div className="box-blur box-blur1 max-w-4xl m-auto text-center">
+      <div className="box-blur  max-w-4xl m-auto text-center">
         <div className="flex items-center justify-center gap-4 mt-8 mb-4">
           {logos.map((logo, index) => (
             <img src={logo} key={index} />
@@ -71,7 +74,7 @@ function Explore() {
           “This programming tool makes it easier for apps to work anywhere”
         </p>
 
-        <img src="/imgs/vercel.svg" className="mx-auto opacity-50" />
+        <img src="/Logo/vercel.svg" className="mx-auto opacity-50" />
       </div>
     </div>
     </motion.div>

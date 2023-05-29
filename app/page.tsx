@@ -56,10 +56,10 @@ const Home: NextPage = () => {
         <title>Wasmer | Homepage.</title>
       </Head>
    
-      <HeroSection />
+      {/* <HeroSection /> */}
 
       <div className=" mt-40 ">
-     <Community/>
+     {/* <Community/> */}
      <Expore2/>
      </div>
    
