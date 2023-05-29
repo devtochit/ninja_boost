@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+    --title : 272, 66%, 6%, 1;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 215 20.2% 65.1%;
+
+    --radius: 0.5rem;
+    --placeholder: 272, 66%, 6%, 0.05
+
+  }
+ 
+}
+.background {
+  background: linear-gradient(180deg, #EFF1F6 0%, #FCFCFE 100%);
+}
+.herosection {
+  min-height: 65vh;
+  @apply relative;
+  background-image: url(/Logo/hero-background.svg);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.herosection .brandicons-section {
+  @apply m-auto absolute top-0 bottom-0 w-full;
+  height: 12.4rem;
+  z-index: 0;
+}
+
+.herosection .brandicons-section .slick-slide> div {
+  display: flex;
+  justify-content: center;
+}
+.baseline{
+  align-items: baseline;
+}
+.logo-image{
+  
+}
+.herosection .herocontent {
+  z-index: 9;
+  min-height: 65vh;
+  position:relative;
+  top:70px;
+}
+.opacitated-logos {
+opacity: 0.6;
+}
+
+.opacitated-logos:hover {
+transition: all 300ms;
+opacity: 1;
+}
+
+.opacitated-logos .shadow {
+border: 1px solid transparent;
+border-radius: 15px;
+}
+
+.opacitated-logos .shadow:hover {
+border: 1px solid #ada5b5;
+}
