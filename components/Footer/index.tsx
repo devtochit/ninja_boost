@@ -1,9 +1,17 @@
 import React from "react"
 import Link from "next/link"
-
+import { motion } from 'framer-motion';
+import styles from '@/styles';
+import { footerVariants } from '@/utils/motion';
 const Footer = () => {
   return (
-    <footer className="footer">
+    <motion.footer
+    variants={footerVariants}
+    initial="hidden"
+    whileInView="show"
+    className={`${styles.xPaddings} py-8 footer relative`}
+  >
+   
       <div className="mx-auto w-full container p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
@@ -125,7 +133,8 @@ const Footer = () => {
           </Link>
         </div>
       </div>
-    </footer>
+  
+    </motion.footer>
   )
 }
 

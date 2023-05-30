@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react"
 import { Spin, Typography } from "antd"
+import { staggerContainer, fadeIn, planetVariants } from '../utils/motion';
+
 import {
   AnimatePresence,
   motion,
@@ -14,10 +16,20 @@ import {
 import { PrimaryButton } from "@/components/Buttons"
 import { LargeCTA, MidCTA } from "@/components/CTA"
 import HomeSlider from "@/components/Carousel/home"
+import styles from "@/styles";
 
 const { Title } = Typography
 function Explore4() {
   return (
+    <section className={`${styles.paddings} relative z-10`}>
+    <motion.div
+      variants={staggerContainer}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.25 }}
+      className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-8`}
+    >
+
     <div className="container">
       <div className="z-20 text-center">
         <div className="flex flex-col gap-2 items-center justify-center">
@@ -35,9 +47,12 @@ function Explore4() {
           </p>
         </div>
       </div>
-
+      <motion.div
+        variants={planetVariants('left')}
+        className={`flex-1 ${styles.flexCenter}`}
+      > 
       <img src="/Logo/cloudimg.svg" className="mx-auto" />
-
+      </motion.div>
       <div className="box-blur box-blur3 max-w-4xl m-auto text-center">
         <div className="flex items-center justify-center gap-4 mt-8 mb-4">
           <div className="flex items-center gap-4 justify-content">
@@ -61,6 +76,8 @@ function Explore4() {
         <img src="/Logo/vercel.svg" className="mx-auto opacity-50" />
       </div>
     </div>
+    </motion.div>
+    </section>
   )
 }
 

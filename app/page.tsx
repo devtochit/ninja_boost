@@ -25,48 +25,31 @@ const logos = [
 const { Title } = Typography;
 
 const Home: NextPage = () => {
-  // const [scope, animate] = useAnimate()
-  // const [isPresent] = usePresence()
-
-  // useEffect(() => {
-  //   if (isPresent) {
-  //     const enterAnimation = async () => {
-  //       await animate(
-  //         ".box-blur",
-  //         { opacity: [0, 1] },
-  //         { duration: 0.6, delay: stagger() },
-  //        );
-  //     };
-
-  //     enterAnimation();
-  //   }
-  // }, [isPresent]);
-
-  // if (!isPresent) {
-  //   return (
-  //     <div className="flex flex-col items-center justify-center h-screen w-screen z-100">
-  //       <Spin />
-  //     </div>
-  //   )
   
-  // }
-
   return (
     <div>
       <Head>
         <title>Wasmer | Homepage.</title>
       </Head>
-   <Header/>
-      <HeroSection />
+       <Header/>
+       <HeroSection />
 
-      <div className=" mt-40 mb-16">
+      {/* <div className='relative'> 
+      </div>  */}
+
+     <div className=" mt-40 mb-16">
      <Community/>
-   
      </div>
+
+      <div className="relative"> 
      <Expore2/>
      <Explore3/>
+     </div>
+
+     <div className=" relative">  
      <Explore4/>
      <Footer /> 
+     </div>
 
    
     </div>

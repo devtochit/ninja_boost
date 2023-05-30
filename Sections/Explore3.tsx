@@ -2,18 +2,14 @@
 
 import { useEffect, useState } from "react"
 import { Spin, Typography } from "antd"
-import {
-  AnimatePresence,
-  motion,
-  stagger,
-  useAnimate,
-  useInView,
-  usePresence,
-} from "framer-motion"
+import { motion } from 'framer-motion';
 
 import { PrimaryButton } from "@/components/Buttons"
 import { LargeCTA, MidCTA } from "@/components/CTA"
 import HomeSlider from "@/components/Carousel/home"
+import { fadeIn, staggerContainer } from '@/utils/motion';
+import styles from "@/styles";
+
 
 const logos = [
   "/Logo/brandIcons/white/logo1.svg",
@@ -26,6 +22,14 @@ const { Title } = Typography
 
 function Explore3() {
   return (
+    <section className={`${styles.paddings} relative z-10`}>
+    <motion.div
+      variants={staggerContainer}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.25 }}
+      className={`${styles.innerWidth} mx-auto flex flex-col`}>
+
     <div className="">
       <div className="container z-20 text-center">
         <div className="flex flex-col gap-2 items-center justify-center">
@@ -43,6 +47,10 @@ function Explore3() {
           </p>
         </div>
       </div>
+      <motion.div
+        variants={fadeIn('up', 'tween', 0.3, 1)}
+        className="relative mt-[68px] flex flex-col w-full h-[550px]"
+      >
 
       <div className="box-blur box-blur2">
         <div className="mb-8">
@@ -64,7 +72,10 @@ function Explore3() {
 
         <img src="/Logo/vercel.svg" className="mx-auto opacity-50" />
       </div>
+      </motion.div>
     </div>
+    </motion.div>
+</section>
   )
 }
 
