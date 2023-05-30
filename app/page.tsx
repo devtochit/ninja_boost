@@ -12,6 +12,7 @@ import Explore3 from '@/Sections/Explore3';
 import Explore4 from '@/Sections/Explore4';
 import Explore6 from '@/Sections/Explore6';
 import styles from '@/styles';
+import { Header } from "@/components/site-header"
 
 const logos = [
    "/Logo/brandIcons/white/logo1.svg",
@@ -55,21 +56,19 @@ const Home: NextPage = () => {
       <Head>
         <title>Wasmer | Homepage.</title>
       </Head>
-   
-      {/* <HeroSection /> */}
+   <Header/>
+      <HeroSection />
 
-      <div className=" mt-40 ">
-     {/* <Community/> */}
-     <Expore2/>
-     </div>
+      <div className=" mt-40 mb-16">
+     <Community/>
    
-     {/* </div> */}
-{/* 
+     </div>
+     <Expore2/>
      <Explore3/>
      <Explore4/>
-     <Explore6/> */}
-     {/* <Footer />  */}
+     <Footer /> 
 
+   
     </div>
   );
 };

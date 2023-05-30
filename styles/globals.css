@@ -90,3 +90,6 @@ border-radius: 15px;
 .opacitated-logos .shadow:hover {
 border: 1px solid #ada5b5;
 }
+.custommarginbottom {
+  margin-bottom: 80px;
+}

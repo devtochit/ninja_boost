@@ -89,7 +89,7 @@ const LogoSlider = ({ rtl = false, initialSlide = 0, speed = 1500 }) => {
               <CustomCard
                 title={
                   <div className="flex items-center gap-4">
-                    <img src="/imgs/mozila.svg" alt="icon" />
+                    <img src="/Logo/mozila.svg" alt="icon" />
 
                     <div className="flex gap-2 items-center">
                       <span className="font-semibold">mozilla</span>
@@ -105,7 +105,7 @@ const LogoSlider = ({ rtl = false, initialSlide = 0, speed = 1500 }) => {
               <CustomCard
                 title={
                   <div className="flex items-center gap-4">
-                    <img src="/imgs/logos/logo3.svg" alt="icon" />
+                    <img src="/Logo/logos/logo3.svg" alt="icon" />
 
                     <div className="flex gap-2 items-center">
                       <span className="font-semibold">sqlite</span>
@@ -121,7 +121,7 @@ const LogoSlider = ({ rtl = false, initialSlide = 0, speed = 1500 }) => {
               <CustomCard
                 title={
                   <div className="flex items-center gap-4">
-                    <img src="/imgs/logos/logo11.svg" alt="icon" />
+                    <img src="/Logo/logos/logo11.svg" alt="icon" />
 
                     <div className="flex gap-2 items-center">
                       <span className="font-semibold">syrusakbary</span>

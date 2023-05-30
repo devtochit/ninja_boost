@@ -34,7 +34,7 @@ const LogoSlider: React.FC<LogoSliderProps> = ({
   useEffect(() => {
     const enterAnimation = async () => {
       await animate(
-        ".logo-image",
+        "img",
         { opacity: [0, 1] },
         { duration: 0.2, delay: stagger() }
       );
@@ -45,8 +45,9 @@ const LogoSlider: React.FC<LogoSliderProps> = ({
 
   return (
     <AnimatePresence>
+          <div ref={scope}> 
       <Slider {...settings} className="flex flex-wrap justify-between   my-4">
-        {BrandLogo.map(({ label, value }, index) => (
+        {BrandLogo.map(({value,label}, index) => (
           <div
             key={index}
             className={`opacitated-logos   ${
@@ -82,6 +83,7 @@ const LogoSlider: React.FC<LogoSliderProps> = ({
           </div>
         ))}
       </Slider>
+      </div>
     </AnimatePresence>
   )
 }

@@ -46,12 +46,12 @@ function Explore() {
 
           {/* <Title className="mt-4 text-48">Run the world</Title> */}
 
-          <p className="font-22 max-w-screen-md mx-auto">
+          {/* <p className="font-22 max-w-screen-md mx-auto">
             Using a binary for each platform and chip is the past. Rise above
             with lightweight containerized apps that simply run everywhere.
-          </p>
+          </p> */}
         </div>
-        
+
       </div>
 
       <div className="box-blur  max-w-4xl m-auto text-center">

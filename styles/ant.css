@@ -288,7 +288,7 @@ opacity: 0.8;
 
 .box-blur1:before {
     /* background: linear-gradient(90deg, #429342 0%, #7fe27f 100%); */
-    background: conic-gradient(from -26.31deg at 50% 50%,#429342  0deg, #02C372 -43.12deg, #02C372  116deg, #EBC645 20.5deg, #02C372 183.75deg, #0B7046 223.13deg, #02C372 268.13deg,#02C372 315deg, #02C372 360deg);
+    background: conic-gradient(from -26.31deg at 50% 50%,#429342  0deg, #02C372 -150.12deg, #02C372  116deg, #EBC645 20.5deg, #02C372 183.75deg, #0B7046 223.13deg, #02C372 268.13deg,#02C372 315deg, #02C372 360deg);
     transform: translate3d(0px, -20px, 0) scale(1);
 }
 

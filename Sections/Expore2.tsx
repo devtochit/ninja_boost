@@ -14,7 +14,7 @@ import { fadeIn,staggerContainer } from "@/utils/motion"
 import styles from "@/styles"
 import { PrimaryButton } from "@/components/Buttons"
 import { LargeCTA, MidCTA } from "@/components/CTA"
-
+import { TypingText } from "@/components/CustomTexts";
 const logos = [
   "/Logo/brandIcons/white/logo1.svg",
   "/Logo/brandIcons/white/logo2.svg",
@@ -33,20 +33,20 @@ function Expore2() {
     viewport={{ once: false, amount: 0.25 }}
     className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
   >
-    <div className="container">
+    <div className= "relative container">
       <div className="z-20 text-center">
-        <div className="flex flex-col gap-2 items-center justify-center">
-          <img src="/Logo/section.svg" width={`1.4px`} />
+        <div className="flex flex-col gap-10 items-center justify-center">
+           <img src="/Logo/section.svg" width={`1.4px`} /> 
           <PrimaryButton
             text="Runtime"
             icon={<img src="/Logo/runtime.png" width="25" />}
-            size="middle"
-          />
+            size="large"
+          /> 
 
           <Title className="mt-4 text-48">Run the world</Title>
-          <p className="font-22 max-w-screen-md mx-auto">
+          <p className="custommarginbottom font-22 max-w-screen-md mx-auto leading-4">
             Using a binary for each platform and chip is the past. Rise above
-            with lightweight containerized apps that simply run everywhere.
+            with <br /> lightweight containerized apps that simply run everywhere.
           </p>
         </div>
       </div>
@@ -58,7 +58,7 @@ function Expore2() {
           ))}
         </div>
 
-        <p className="text-white">Supports almost every programming language</p>
+        <p className=" mb-4 text-white">Supports almost every programming language</p>
 
         <MidCTA
           title="Truly universal, runs everywhere & fast as native"
@@ -67,12 +67,12 @@ function Expore2() {
       </div>
 
       <div className="mt-16 text-center">
-        <p className="font-22 max-w-screen-md mx-auto">
+        <p className=" mt-10  font-22 max-w-screen-md mx-auto">
           “This programming tool makes it easier for apps to work anywhere”
         </p>
 
-        <img src="/Logo/vercel.svg" className="mx-auto opacity-50" />
-      </div>
+        <img src="/Logo/vercel.svg" className="  mx-auto opacity-50" />
+      </div>  
     </div>
     </motion.div>
   )

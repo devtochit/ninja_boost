@@ -29,11 +29,11 @@ function Explore3() {
     <div className="">
       <div className="container z-20 text-center">
         <div className="flex flex-col gap-2 items-center justify-center">
-          <img src="/imgs/section.svg" width={`1.4px`} />
+          <img src="/Logo/section.svg" width={`1.4px`} />
           <PrimaryButton
             text="Registry"
-            icon={<img src="/imgs/register.png" width="25" />}
-            size="middle"
+            icon={<img src="/Logo/register.png" width="25" />}
+            size="large"
           />
 
           <Title className="mt-4 text-48">Better together</Title>
@@ -62,7 +62,7 @@ function Explore3() {
           “This programming tool makes it easier for apps to work anywhere”
         </p>
 
-        <img src="/imgs/vercel.svg" className="mx-auto opacity-50" />
+        <img src="/Logo/vercel.svg" className="mx-auto opacity-50" />
       </div>
     </div>
   )
