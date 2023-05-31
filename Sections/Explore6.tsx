@@ -21,11 +21,11 @@ function Explore6() {
   return (
     <div className="container">
       <div className=" py-10 text-center">
-        <div className="flex flex-col gap-2 items-center justify-center">
+        <div className=" mb-2 flex flex-col gap-4 items-center justify-center ">
           <p className="mt-4 font-22 font-semibold text-black">
             We are trusted by the best
           </p>
-          <p className="font-22 max-w-screen-md mx-auto">
+          <p className="font-22 mt-4  max-w-screen-md mx-auto">
             “This programming tool makes it easier for apps to work anywhere”
           </p>
 

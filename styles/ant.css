@@ -58,7 +58,7 @@ h1 {
 }
 
 p {
-    /* margin-bottom: 1rem; */
+    margin-bottom: 1rem;
 }
 
 .bg-gray {
@@ -298,7 +298,7 @@ opacity: 0.8;
 }
 
 .box-blur3:before {
-    background: linear-gradient(90deg, #956ADB 0%, #956ADB 100%);
+    background: conic-gradient(from -26.31deg at 50% 50%, #605DE9 0deg, #AC5CE0 43.12deg, #5D2A79 90deg, #605DE9 142.5deg, #AC5CE0 183.75deg, #5D2A79 223.13deg, #AC5CE0 268.13deg, #605DE9 315deg, #5D2A79 360deg);
     transform: translate3d(0px, -20px, 0) scale(1);
 }
 
