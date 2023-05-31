@@ -40,16 +40,16 @@ function Explore3() {
             size="large"
           />
 
-          <Title className="mt-4 text-48">Better together</Title>
-          <p className="font-22 max-w-screen-md mx-auto">
-            Packages are limited by their languages no more. Collaborate across
+          <Title className="mt-10 text-48">Better together</Title>
+          <p className="font-22 mb-4 max-w-screen-md mx-auto ">
+            Packages are limited by their languages no more. Collaborate across <br />
             stacks, leverage all and contribute your own.
           </p>
         </div>
       </div>
       <motion.div
         variants={fadeIn('up', 'tween', 0.3, 1)}
-        className="relative mt-[68px] flex flex-col w-full h-[550px]"
+        className="relative  flex flex-col w-full "
       >
 
       <div className="box-blur box-blur2">

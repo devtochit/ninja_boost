@@ -17,7 +17,6 @@ import { PrimaryButton } from "@/components/Buttons"
 import { LargeCTA, MidCTA } from "@/components/CTA"
 import HomeSlider from "@/components/Carousel/home"
 import styles from "@/styles";
-
 const { Title } = Typography
 function Explore4() {
   return (
@@ -43,7 +42,7 @@ function Explore4() {
           <Title className="mt-4 text-48">Above the clouds</Title>
           <p className="font-22 max-w-screen-md mx-auto">
             Get the scalability of serverless and the reusability of cloud.
-            Deploy to the edge, save your users time and yourself money.{" "}
+            Deploy to <br /> the edge, save your users time and yourself money.{" "}
           </p>
         </div>
       </div>

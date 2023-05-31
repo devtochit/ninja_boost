@@ -13,6 +13,7 @@ import Explore4 from '@/Sections/Explore4';
 import Explore6 from '@/Sections/Explore6';
 import styles from '@/styles';
 import { Header } from "@/components/site-header"
+import Expore7 from '../Sections/Explore7';
 
 const logos = [
    "/Logo/brandIcons/white/logo1.svg",
@@ -37,19 +38,28 @@ const Home: NextPage = () => {
       {/* <div className='relative'> 
       </div>  */}
 
-     <div className=" mt-40 mb-16">
+     <div className=" mt-80 mb-16">
      <Community/>
      </div>
-
-      <div className="relative"> 
+     <div className="relative mt-40 mb-16"> 
      <Expore2/>
+  
+     </div>
+      <div className="relative mt-40 mb-16"> 
+   
      <Explore3/>
      </div>
 
      <div className=" relative">  
      <Explore4/>
+     </div>
+
+     <div className="  herosection relative mt-40 mb-16"> 
+     <Expore7/>
      <Footer /> 
      </div>
+    
+    
 
    
     </div>
