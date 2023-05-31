@@ -67,8 +67,6 @@ const Home: NextPage = () => {
      <Explore3/>
      <Explore4/>
      <Footer /> 
-
-   
     </div>
   );
 };

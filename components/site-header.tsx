@@ -1,23 +1,23 @@
 "use client"
 
-import { useState } from "react"
-import Image from "next/image"
-import Link from "next/link"
-import { motion } from "framer-motion"
-import * as Icon from "react-feather"
+import { useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { motion } from "framer-motion";
+import * as Icon from "react-feather";
 
-import { menuItems, menuMobileItems } from "@/lib/navLinks"
+import { menuItems, menuMobileItems } from "@/lib/navLinks";
 
-import { HeaderProps } from "../types/nav"
-import { PrimaryButton } from "./Buttons"
-import { SearchInput } from "./Inputs"
-import { MobileNavBar } from "./Menu"
+import { HeaderProps } from "../types/nav";
+import { PrimaryButton } from "./Buttons";
+import { SearchInput } from "./Inputs";
+import { MobileNavBar } from "./Menu";
 
 export const Header: React.FC<HeaderProps> = ({ loggedIn = false }) => {
-  const [mobileMenuClicked, setmobileMenuClicked] = useState(true)
+  const [mobileMenuClicked, setmobileMenuClicked] = useState(true);
 
-  const toggleMenu = () => {
-    setmobileMenuClicked(!mobileMenuClicked)
+  const toggleMenu = ()    => {
+    setmobileMenuClicked(!mobileMenuClicked);
   }
 
   return (
@@ -94,5 +94,5 @@ export const Header: React.FC<HeaderProps> = ({ loggedIn = false }) => {
         )}
       </nav>
     </header>
-  )
+  );
 }

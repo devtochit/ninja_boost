@@ -4,8 +4,8 @@ import { motion, Variants } from 'framer-motion';
 import { textContainer, textVariant2 } from '@/utils/motion';
 
 interface TypingTextProps {
-  title: string;
-  textStyles: string;
+  title: string | undefined;
+  textStyles: string | undefined;
 }
 export const TypingText: React.FC<TypingTextProps> = ({ title, textStyles }) => (
   <div suppressHydrationWarning={true}> 
@@ -15,7 +15,7 @@ export const TypingText: React.FC<TypingTextProps> = ({ title, textStyles }) => 
     >
       {Array.from(title).map((letter, index) => (
         <motion.span variants={textVariant2} key={index}>
-          {letter === ' ' ? '\u00A0' : letter}
+          {letter === ' ' ? '\u00A0' :  letter}
         </motion.span>
       ))}
     </motion.p>
@@ -23,8 +23,8 @@ export const TypingText: React.FC<TypingTextProps> = ({ title, textStyles }) => 
 );
 
 interface TitleTextProps {
-  title: string;
-  textStyles: string;
+  title: string | undefined;
+  textStyles: string | undefined;
 }
 
 export const TitleText: React.FC<TitleTextProps> = ({ title, textStyles }) => (

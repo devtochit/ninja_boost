@@ -1,13 +1,13 @@
-import React from "react"
-import { Button, Divider } from "antd"
-import { ArrowUpRight } from "lucide-react"
+import React from "react";
+import { Button, Divider } from "antd";
+import { ArrowUpRight } from "lucide-react";
 
 interface ButtonProps {
-  text?: string
-  iconstat?: boolean
-  size?: any
-  className?: string
-  icon?: React.ReactNode
+  text?: string;
+  iconstat?: boolean;
+  size?: any;
+  className?: string;
+  icon?: React.ReactNode;
 }
 
 export const PrimaryButton: React.FC<ButtonProps> = ({
@@ -26,7 +26,7 @@ export const PrimaryButton: React.FC<ButtonProps> = ({
       <span>{text}</span>
       {iconstat ? <ArrowUpRight size={16} /> : null}
     </Button>
-  )
+  );
 }
 
 export const SecondaryButton: React.FC<ButtonProps> = ({
@@ -45,7 +45,7 @@ export const SecondaryButton: React.FC<ButtonProps> = ({
       <span>{text}</span>
       {iconstat ? <ArrowUpRight size={16} /> : null}
     </Button>
-  )
+  );
 }
 
 export const TertiaryButton: React.FC<ButtonProps> = ({
@@ -63,7 +63,7 @@ export const TertiaryButton: React.FC<ButtonProps> = ({
       <span>{text}</span>
       {iconstat ? icon : null}
     </Button>
-  )
+  );
 }
 
 export const IconOnlyButton: React.FC<ButtonProps> = ({
@@ -77,7 +77,7 @@ export const IconOnlyButton: React.FC<ButtonProps> = ({
       className={`custom-btn-primary flex items-center justify-center gap-2 ${className}`}
       icon={icon}
     />
-  )
+  );
 }
 
 export const GithubButton: React.FC<ButtonProps> = ({
@@ -95,7 +95,7 @@ export const GithubButton: React.FC<ButtonProps> = ({
       <Divider type="vertical" />
       <img src="/Logo/githublink.svg" alt="Star" width="30" />
     </Button>
-  )
+  );
 }
 
 export const LinkButton: React.FC<ButtonProps> = ({
@@ -115,7 +115,7 @@ export const LinkButton: React.FC<ButtonProps> = ({
       <span>{text}</span>
       {iconstat ? <ArrowUpRight size={16} /> : null}
     </Button>
-  )
+  );
 }
 
 export const TextLinkButton: React.FC<ButtonProps> = ({
@@ -135,5 +135,5 @@ export const TextLinkButton: React.FC<ButtonProps> = ({
       <span>{text}</span>
       {iconstat ? <ArrowUpRight size={16} /> : null}
     </Button>
-  )
+  );
 }

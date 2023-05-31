@@ -7,7 +7,7 @@ import { Select, message } from "antd"
 import { CodeCard, TerminalCard } from "../Card/code"
 
 interface EditorComponentProps {
-  title?: string | null
+  title?: string | undefined
   extra?: boolean
 }
 
@@ -53,11 +53,13 @@ func main() {
 }`,
   }
 
-  const [editorValue, setEditorValue] = useState(languageEditorValues.python)
+  const [editorValue, setEditorValue] = useState(languageEditorValues.python);
 
   function handleEditorChange(value: string | undefined) {
     if (value) {
-      setEditorValue(value)
+      setEditorValue(value);
+    } else if (editorValue) {
+      editorValue(value);
     }
   }
 
@@ -264,5 +266,5 @@ export const TerminalComponent: React.FC = () => {
         }
       />
     </>
-  )
+  );
 }
