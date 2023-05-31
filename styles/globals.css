@@ -43,7 +43,7 @@
   background: linear-gradient(180deg, #EFF1F6 0%, #FCFCFE 100%);
 }
 .herosection {
-  min-height: 65vh;
+  min-height: 90vh;
   @apply relative;
   background-image: url(/Logo/hero-background.svg);
   background-position: center;

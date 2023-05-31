@@ -7,7 +7,7 @@ import { fadeIn, staggerContainer } from "@/utils/motion";
 import styles from "@/styles";
 import { PrimaryButton } from "../components/Buttons";
 
-function Community() {
+export default function Community() {
   return (
     <div className="container flex">
       <div className="font-semibold  text-black max-w-3xl mx-auto pt-10">
@@ -33,7 +33,8 @@ function Community() {
             size="large"
             className="font-semibold font-48 "
           />
-          <span className="font-semibold font-48"> everywhere.</span>
+          <TypingText title="everywhere." textStyles="leading-5 font-48" />
+
           </div>
 
           <div className="flex gap-8 baseline justify-center">  
@@ -69,5 +70,3 @@ function Community() {
     </div>
   );
 }
-
-export default Community;

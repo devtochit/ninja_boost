@@ -1,33 +1,36 @@
 "use client"
 
-import { Typography } from "antd"
-import { GithubButton } from "@/components/Buttons"
-import Slider from "@/components/Carousel/try"
-import CustomEditorComponent from "@/components/Editor"
-import { TypingText } from "@/components/CustomTexts"
+import { Typography } from "antd";
+import { GithubButton } from "@/components/Buttons";
+import Slider from "@/components/Carousel/try";
+import CustomEditorComponent from "@/components/Editor";
+import { TypingText } from "@/components/CustomTexts";
 import { motion } from 'framer-motion';
-import { fadeIn,staggerContainer } from "@/utils/motion"
-import styles from "@/styles"
+import { fadeIn,staggerContainer } from "@/utils/motion";
+import styles from "@/styles";
 
 
 
-const { Title } = Typography
+const { Title } = Typography;
 
 const HeroSection = () => {
   return (
-    <div className="herosection ">
+    <div className="herosection">
       <div className="titleshift">
-        <Title className="font-semibold   text-[52px] text-center ">
+        <Title className="font-semibold   text-[52px] text-center">
           Run, Publish & Deploy <br />
           any code – anywhere
         </Title>
       </div>
 
-      <div className="herocontent  max-w-xl mx-auto flex flex-col mt-5 items-stretch justify-center gap-4 relative px-4 pt-10">
+      <div className="herocontent  max-w-xl mx-auto flex flex-col 
+          mt-5 items-stretch justify-center 
+          gap-4 relative px-4 pt-10">
         <div className="max-w-lg mx-auto  blur-effect">
           <CustomEditorComponent title={null} extra={false} />
         </div>
-        <div className="text-center flex mt-4 justify-center items-center gap-2 flex-col">
+        <div className="text-center flex mt-4 
+         justify-center items-center gap-2 flex-col">
           <p className="mt-4">
             Serve sandboxed WebAssembly apps anywhere through a single runtime
             <TypingText title="and do in days what others do in months." textStyles=""/>
@@ -78,7 +81,7 @@ const HeroSection = () => {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default HeroSection
+export default HeroSection;

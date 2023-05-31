@@ -53,7 +53,7 @@ const CustomHeader: React.FC<CustomHeaderProps> = ({
 
       <Divider className="m-0" />
     </div>
-  )
+  );
 }
 
-export default CustomHeader
+export default CustomHeader;

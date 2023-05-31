@@ -1,20 +1,20 @@
 "use client"
 
-import React, { useEffect } from "react"
+import React, { useEffect } from "react";
 import {
   AnimatePresence,
   motion,
   stagger,
   useAnimate,
   usePresence,
-} from "framer-motion"
-import Slider from "react-slick"
+} from "framer-motion";
+import Slider from "react-slick";
 
-import { CustomCard } from "../Card"
+import { CustomCard } from "../Card";
 
 const LogoSlider = ({ rtl = false, initialSlide = 0, speed = 1500 }) => {
-  const [scope, animate] = useAnimate()
-  const [isPresent, safeToRemove] = usePresence()
+  const [scope, animate] = useAnimate();
+  const [isPresent, safeToRemove] = usePresence();
 
   const settings = {
     dots: false,
@@ -47,22 +47,22 @@ const LogoSlider = ({ rtl = false, initialSlide = 0, speed = 1500 }) => {
       const slides = document.querySelectorAll(
         ".box-blur.box-blur2 .slick-slide > div"
       ) as NodeListOf<HTMLElement>
-      let maxHeight = 0
+      let maxHeight = 0;
 
       slides.forEach((slide) => {
-        slide.style.height = "" // Reset slide height before calculating
+        slide.style.height = ""; // Reset slide height before calculating
 
         const slideHeight = slide.offsetHeight
-        maxHeight = Math.max(maxHeight, slideHeight)
+        maxHeight = Math.max(maxHeight, slideHeight);
       })
 
       slides.forEach((slide) => {
-        slide.style.height = `${maxHeight}px` // Set the same height for all slides
+        slide.style.height = `${maxHeight}px`; // Set the same height for all slides
       })
     }
 
-    matchSlideHeight()
-  }, [])
+    matchSlideHeight();
+  }, []);
 
   useEffect(() => {
     const enterAnimation = async () => {
@@ -74,11 +74,11 @@ const LogoSlider = ({ rtl = false, initialSlide = 0, speed = 1500 }) => {
     }
 
     if (isPresent) {
-      enterAnimation()
+      enterAnimation();
     } else {
-      safeToRemove()
+      safeToRemove();
     }
-  }, [isPresent, animate, safeToRemove])
+  }, [isPresent, animate, safeToRemove]);
 
   return (
     <AnimatePresence>
@@ -137,7 +137,6 @@ const LogoSlider = ({ rtl = false, initialSlide = 0, speed = 1500 }) => {
         </div>
       )}
     </AnimatePresence>
-  )
+  );
 }
-
-export default LogoSlider
+export default LogoSlider;

@@ -28,7 +28,7 @@ export const LargeCTA: React.FC<LargeCTAProps> = ({
 
 interface MidCTAProps {
   title?: string
-  subtitle?: string | null
+  subtitle?: string | undefined
 }
 
 export const MidCTA: React.FC<MidCTAProps> = ({
@@ -51,5 +51,5 @@ export const MidCTA: React.FC<MidCTAProps> = ({
         </div>
       </div>
     </div>
-  )
+  );
 }
