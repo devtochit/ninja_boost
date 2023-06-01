@@ -18,7 +18,7 @@ import { LargeCTA, MidCTA } from "@/components/CTA"
 import HomeSlider from "@/components/Carousel/home"
 import styles from "@/styles";
 const { Title } = Typography
-function Explore4() {
+export default function Explore4() {
   return (
     <section className={`${styles.paddings} relative z-10`}>
     <motion.div
@@ -77,7 +77,6 @@ function Explore4() {
     </div>
     </motion.div>
     </section>
-  )
+  );
 }
 
-export default Explore4

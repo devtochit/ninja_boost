@@ -33,8 +33,8 @@ function Expore7() {
     viewport={{ once: false, amount: 0.25 }}
     className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
   >
-    <div className= " container">
-      <div className=" py-10 text-center">
+    <div className= "container">
+      <div className="py-10 text-center">
         <div className="flex flex-col gap-10 items-center justify-center">
         <p className="mt-4 font-22 font-semibold text-black">
             We are trusted by the best
@@ -48,7 +48,7 @@ function Expore7() {
         </div>
       </div>
       <div className="max-w-4xl m-auto text-left pt-12 pb-20">
-      <div className=" blur-effect  z-10">
+      <div className="blur-effect  z-10">
         <LargeCTA
           title="Get Started"
           subtitle="Join the vibrant Wasmer community. Create your fist package, run it from the shell and deploy it to the Edge"
