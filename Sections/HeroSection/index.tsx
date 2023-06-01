@@ -29,9 +29,8 @@ const HeroSection = () => {
         <div className="max-w-lg mx-auto  blur-effect">
           <CustomEditorComponent title={null} extra={false} />
         </div>
-        <div className="text-center flex mt-4 
-         justify-center items-center gap-2 flex-col">
-          <p className="mt-4">
+        <div className={`${styles.flexCenter} relipostion text-center mt-4  gap-2 flex-col`}>
+          <p className="mt-4 mobile">
             Serve sandboxed WebAssembly apps anywhere through a single runtime
             <TypingText title="and do in days what others do in months." textStyles=""/>
             

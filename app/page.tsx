@@ -34,10 +34,6 @@ const Home: NextPage = () => {
       </Head>
        <Header/>
        <HeroSection />
-
-      {/* <div className='relative'> 
-      </div>  */}
-
      <div className=" mt-80 mb-16">
      <Community/>
      </div>

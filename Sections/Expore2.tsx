@@ -35,7 +35,7 @@ function Expore2() {
   >
     <div className= "relative container">
       <div className="z-20 text-center">
-        <div className="flex flex-col gap-10 items-center justify-center">
+        <div className={`${styles.flexCenter} flex-col gap-10 justify-center`}>
            <img src="/Logo/section.svg" width={`1.4px`} /> 
           <PrimaryButton
             text="Runtime"

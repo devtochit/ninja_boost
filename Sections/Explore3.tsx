@@ -32,7 +32,7 @@ function Explore3() {
 
     <div className="">
       <div className="container z-20 text-center">
-        <div className="flex flex-col gap-2 items-center justify-center">
+        <div className={`${styles.flexCenter} flex-col  gap-2  justify-center`}>
           <img src="/Logo/section.svg" width={`1.4px`} />
           <PrimaryButton
             text="Registry"

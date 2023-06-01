@@ -449,3 +449,12 @@ code {
     top: 50px;
   
   }
+
+  @media (max-width: 750px) {
+    .font-48{
+      font-size: 36px
+    }
+  }
+  .justify-content {
+ justify-content: center;
+  }

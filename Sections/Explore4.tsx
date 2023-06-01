@@ -31,7 +31,7 @@ function Explore4() {
 
     <div className="container">
       <div className="z-20 text-center">
-        <div className="flex flex-col gap-2 items-center justify-center">
+        <div className={`${styles.flexCenter} flex-col  gap-2  justify-center`}>
           <img src="/Logo/section.svg" width={`1.4px`} />
           <PrimaryButton
             text="Edge"
@@ -53,12 +53,12 @@ function Explore4() {
       <img src="/Logo/cloudimg.svg" className="mx-auto" />
       </motion.div>
       <div className="box-blur box-blur3 max-w-4xl m-auto text-center">
-        <div className="flex items-center justify-center gap-4 mt-8 mb-4">
-          <div className="flex items-center gap-4 justify-content">
+        <div className={`${styles.flexCenter}justify-center gap-4 mt-8 mb-4`}>
+        <div className={`${styles.flexCenter} gap-4 justify-content`}>
             <img src="/Logo/tone.svg" />
             <div className="text-white flex-1">Infinite scalability</div>
           </div>
-          <div className="flex items-center gap-4 justify-content">
+          <div className={`${styles.flexCenter} gap-4 justify-content`}>
             <img src="/Logo/fire.svg" />
             <div className="text-white flex-1">Instant cold starts</div>
           </div>

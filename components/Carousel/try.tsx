@@ -46,16 +46,16 @@ const LogoSlider: React.FC<LogoSliderProps> = ({
   return (
     <AnimatePresence>
           <div ref={scope}> 
-      <Slider {...settings} className="flex flex-wrap justify-between   my-4">
+      <Slider {...settings} className=" hidden lg:flex flex-wrap justify-between   my-4">
         {BrandLogo.map(({value,label}, index) => (
           <div
             key={index}
             className={`opacitated-logos   ${
               labeled ? "w-[250px] h-[61px]   " : "w-[61px] h-[61px]"
-            } flex bg-white  my-2  rounded-[15px] w-full mx-2`}
+            } hidden lg:flex bg-white  my-2  rounded-[15px] w-full mx-2`}
           >
             <div
-              className={`shadow flex items-center ${
+              className={`shadow hidden  lg:flex items-center ${
                 labeled ? "justify-around items-center  " : "justify-center"
               } h-full overflow-hidden`}
             >

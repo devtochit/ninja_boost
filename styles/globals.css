@@ -64,14 +64,15 @@
 .baseline{
   align-items: baseline;
 }
-.logo-image{
-  
+.relipostion{
+  position: relative;
+  top:10px;
 }
 .herosection .herocontent {
   z-index: 9;
-  min-height: 65vh;
+  min-height: 50vh;
   position:relative;
-  top:70px;
+  top:120px;
 }
 .opacitated-logos {
 opacity: 0.6;
@@ -92,4 +93,13 @@ border: 1px solid #ada5b5;
 }
 .custommarginbottom {
   margin-bottom: 80px;
+}
+
+@media (max-width: 750px) {
+  .mobile{
+    font-size: 20px
+  }
+  .col{
+    flex-direction: column;
+  }
 }

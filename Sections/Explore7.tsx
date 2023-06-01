@@ -35,10 +35,12 @@ function Expore7() {
   >
     <div className= " container">
       <div className=" py-10 text-center">
-        <div className="flex flex-col gap-10 items-center justify-center">
-        <p className="mt-4 font-22 font-semibold text-black">
-            We are trusted by the best
-          </p>        <div className="custommarginbottom text-center">
+        <div className={` ${styles.flexCenter} flex-col gap-10  justify-center`}>
+      <div className="flex gap-1"> 
+      <p className="mt-4 font-22 font-semibold text-black" >  We are trusted </p>
+            <TypingText title=" by the best " textStyles="mt-4 font-22 font-semibold text-black" />
+      </div>
+             <div className="custommarginbottom text-center">
         <p className=" mt-10  font-22 max-w-screen-md mx-auto">
           “This programming tool makes it easier for apps to work anywhere”
         </p>

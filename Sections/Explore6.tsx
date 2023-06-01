@@ -14,6 +14,7 @@ import {
 import { PrimaryButton } from "@/components/Buttons"
 import { LargeCTA, MidCTA } from "@/components/CTA"
 import HomeSlider from "@/components/Carousel/home"
+import styles from "@/styles"
 
 const { Title } = Typography
 
@@ -21,7 +22,7 @@ function Explore6() {
   return (
     <div className="container">
       <div className=" py-10 text-center">
-        <div className=" mb-2 flex flex-col gap-4 items-center justify-center ">
+        <div className={`${styles.flexCenter} mb-2 flex-col gap-4  justify-center `}>
           <p className="mt-4 font-22 font-semibold text-black">
             We are trusted by the best
           </p>

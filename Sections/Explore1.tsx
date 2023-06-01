@@ -35,7 +35,7 @@ function Explore() {
   >
     <div className="container">
       <div className="z-20 text-center">
-        <div className="flex flex-col gap-2 items-center justify-center">
+        <div className={`flex-col gap-2 items-center justify-center`}>
           <img src="/Logo/section.svg" width={`1.4px`} />
 
           {/* <PrimaryButton
@@ -55,7 +55,7 @@ function Explore() {
       </div>
 
       <div className="box-blur  max-w-4xl m-auto text-center">
-        <div className="flex items-center justify-center gap-4 mt-8 mb-4">
+        <div className={`${styles.flexCenter}justify-center gap-4 mt-8 mb-4`}>
           {logos.map((logo, index) => (
             <img src={logo} key={index} />
           ))}
