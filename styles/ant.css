@@ -454,6 +454,7 @@ code {
   }
 
   @media (max-width: 750px) {
+  
     .font-48{
       font-size: 36px
     }

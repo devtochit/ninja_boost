@@ -94,6 +94,10 @@ border: 1px solid #ada5b5;
 .custommarginbottom {
   margin-bottom: 80px;
 }
+.custommargin{
+  margin-bottom: 30px;
+
+}
 
 @media (max-width: 750px) {
   .mobile{

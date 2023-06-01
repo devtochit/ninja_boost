@@ -85,7 +85,7 @@ const LogoSlider = ({ rtl = false, initialSlide = 0, speed = 1500 }) => {
       {isPresent && (
         <div ref={scope}>
           <Slider {...settings}>
-            <div className="px-4 ">
+            <div className="px-4 h-full">
               <CustomCard
                 title={
                   <div className="flex items-center gap-4">
@@ -101,6 +101,7 @@ const LogoSlider = ({ rtl = false, initialSlide = 0, speed = 1500 }) => {
                 content="SpiderMonkey is Mozilla’s JavaScript and WebAssembly Engine, used in Firefox, Servo and various other projects."
               />
             </div>
+
             <div className="px-4 h-full">
               <CustomCard
                 title={
@@ -117,6 +118,7 @@ const LogoSlider = ({ rtl = false, initialSlide = 0, speed = 1500 }) => {
                 content="SQLite is a C-language library that implements a small, fast, self-contained, high-reliability, full-featured, SQL database engine"
               />
             </div>
+            
             <div className="px-4 h-full">
               <CustomCard
                 title={

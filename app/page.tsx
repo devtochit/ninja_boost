@@ -41,7 +41,7 @@ const Home: NextPage = () => {
      <Expore2/>
   
      </div>
-      <div className="  mt-4"> 
+      <div className="relative mt-20 mb-16"> 
    
      <Explore3/>
      </div>

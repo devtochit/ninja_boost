@@ -29,10 +29,10 @@ export const CustomCard: React.FC<CustomCardProps> = ({
         </Link>
       }
       content={
-        <div className="card-content relative">
-          <p className="text-gray-500 mb-8">{content}</p>
+        <div className="card-content relative ">
+          <p className="text-gray-500  ">{content}</p>
 
-          <div className="flex items-center gap-4 text-gray-500 mt-4 lg:mt-6 fixed bottom-4 mt-4">
+        <div className="flex items-center gap-4 text-gray-500  lg:mt-6 fixed bottom-3 ">
             <Icon.BookOpen size={16} />
 
             <Divider type="vertical" className="border-black" />
@@ -46,7 +46,7 @@ export const CustomCard: React.FC<CustomCardProps> = ({
               <Icon.Download size={16} />
               <span>524</span>
             </div>
-          </div>
+          </div> 
         </div>
       }
     />

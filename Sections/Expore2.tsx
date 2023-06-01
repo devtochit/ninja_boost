@@ -59,7 +59,7 @@ function Expore2() {
           ))}
         </div>
 
-        <p className=" mb-4 text-white">Supports almost every programming language</p>
+        <p className=" custommargin text-white">Supports almost every programming language</p>
     </div>
         <MidCTA
           title="Truly universal, runs everywhere & fast as native"

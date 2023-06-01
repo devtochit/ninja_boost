@@ -53,7 +53,7 @@ function Explore3() {
       >
 
       <div className="box-blur box-blur2">
-        <div className="mb-8">
+        <div className="custommargin">
           <HomeSlider speed={2000} />
         </div>
 
