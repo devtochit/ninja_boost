@@ -240,7 +240,7 @@ opacity: 0.8;
     right: 0;
     bottom: 0;
     left: 0;
-    height: 65vh;
+    /* height: 65vh; */
     transform: translate3d(0px, 0px, 0) scale(1);
     filter: blur(20px);
     border-radius: inherit;

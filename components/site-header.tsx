@@ -27,9 +27,9 @@ export const Header: React.FC<HeaderProps> = ({ loggedIn = false }) => {
         aria-label="Global"
       >
         <div className="flex">
-          <Link href="/" className="-m-1.5 p-1.5">
+          <a href="/" className="-m-1.5 p-1.5">
             <img className="h-8 w-auto" src="/Logo/logo.svg" alt="" />
-          </Link>
+          </a>
         </div>
         <div className="flex items-center justify-end gap-4 lg:hidden">
           <PrimaryButton text="Sign up" size={`middle`} iconstat={false} />

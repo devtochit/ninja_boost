@@ -10,7 +10,6 @@ interface TypingTextProps {
 export const TypingText: React.FC<TypingTextProps> = ({ title, textStyles }) => (
   <div suppressHydrationWarning={true}> 
       <motion.span
-      variants={textContainer}
       className={` ${textStyles}`}
     >
       {Array.from(title).map((letter, index) => (
