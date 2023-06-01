@@ -53,7 +53,7 @@ function Explore4() {
       <img src="/Logo/cloudimg.svg" className="mx-auto" />
       </motion.div>
       <div className="box-blur box-blur3 max-w-4xl m-auto text-center">
-        <div className={`${styles.flexCenter}justify-center gap-4 mt-8 mb-4`}>
+        <div className={`${styles.flexCenter} col justify-center gap-4 mt-8 mb-4`}>
         <div className={`${styles.flexCenter} gap-4 justify-content`}>
             <img src="/Logo/tone.svg" />
             <div className="text-white flex-1">Infinite scalability</div>
@@ -67,7 +67,7 @@ function Explore4() {
         <MidCTA title="Faster, cheaper & indefinitely scalable" />
       </div>
 
-      <div className="mt-16 text-center">
+      <div className="mt-16 smallmargin text-center">
         <p className="font-22 max-w-screen-md mx-auto">
           “This programming tool makes it easier for apps to work anywhere”
         </p>

@@ -449,12 +449,39 @@ code {
     top: 50px;
   
   }
+  .smallmargin{
+    margin-top: 30px;
+  }
 
   @media (max-width: 750px) {
     .font-48{
       font-size: 36px
     }
+    .rundeyworldmobile{
+        width: 66%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+       .justify-content {
+        justify-content: center;
+         }
+          .font-22 {
+           font-size: 20px;
+            }
+        .smallmargin{
+        margin-top: 20px;
+        }
+        .footerreverse{
+        display:flex;
+        flex-direction:column-reverse;
+        gap:40px;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+         }
+        .justifybetween{
+            display:flex;
+            justify-content: start;
+            gap:10px;
+        }
   }
-  .justify-content {
- justify-content: center;
-  }
+  
+

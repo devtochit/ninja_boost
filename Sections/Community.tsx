@@ -23,7 +23,7 @@ export default function Community() {
 
           <motion.div
             variants={fadeIn('up', 'tween', 0.1, 1)}
-            className=" sm:bg-black"
+            className=""
           >
            <div className="flex col gap-8  baseline justify-center">  
           <span className="font-semibold font-48 text-center leading-5 ">Create apps that</span>
@@ -36,7 +36,7 @@ export default function Community() {
           <span className="font-48 leading-5">everywhere.</span>
           </div>
 
-          {/* <div className="flex gap-8 baseline justify-center">  
+           <div className="flex  col  gap-8 baseline justify-center">  
             <PrimaryButton
             text="Publish"
             icon={<img src="/Logo/register.png" width="35" />}
@@ -45,20 +45,19 @@ export default function Community() {
 
           />
           <span className="font-48 leading-5 ">and share with the community</span>
-          </div> */}
+          </div> 
 
-      {/* <div className="flex gap-8 baseline justify-center">   */}
-          {/* <span className="font-48 ">and</span> */}
-                  {/* <PrimaryButton
+     <div className="flex  col gap-8 baseline justify-center">   
+                   <PrimaryButton
                     text="Edge"
                     icon={<img src="/Logo/edge.png" width="35" />}
                     size="large"
                     className="font-semibold font-48 "
 
-                    /> */}
-                  {/* <TypingText title="to the edge, globally." textStyles="text-normal leading-5  font-48" /> */}
+                    /> 
+                  <TypingText title="to the edge, globally." textStyles="text-normal leading-5  font-48" />
 
-          {/* </div>  */}
+           </div>  
 
           </motion.div>
     </motion.div>

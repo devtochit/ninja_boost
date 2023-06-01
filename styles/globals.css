@@ -101,5 +101,9 @@ border: 1px solid #ada5b5;
   }
   .col{
     flex-direction: column;
+    text-align: center;
+    align-items: center;
+      gap:40px;
+      margin-top: 30px;
   }
 }

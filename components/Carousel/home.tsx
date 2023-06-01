@@ -85,7 +85,7 @@ const LogoSlider = ({ rtl = false, initialSlide = 0, speed = 1500 }) => {
       {isPresent && (
         <div ref={scope}>
           <Slider {...settings}>
-            <div className="px-4 h-full">
+            <div className="px-4 ">
               <CustomCard
                 title={
                   <div className="flex items-center gap-4">

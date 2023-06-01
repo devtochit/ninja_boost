@@ -16,11 +16,11 @@ import { PrimaryButton } from "@/components/Buttons"
 import { LargeCTA, MidCTA } from "@/components/CTA"
 import { TypingText } from "@/components/CustomTexts";
 const logos = [
-  "/Logo/brandIcons/white/logo1.svg",
-  "/Logo/brandIcons/white/logo2.svg",
-  "/Logo/brandIcons/white/logo3.svg",
-  "/Logo/brandIcons/white/logo4.svg",
-  "/Logo/brandIcons/white/logo5.svg",
+  "/Logo/brandIcons/whitebrandIcon/brandlogo1.svg",
+  "/Logo/brandIcons/whitebrandIcon/brandlogo2.svg",
+  "/Logo/brandIcons/whitebrandIcon/brandlogo3.svg",
+  "/Logo/brandIcons/whitebrandIcon/brandlogo4.svg",
+  "/Logo/brandIcons/whitebrandIcon/brandlogo5.svg",
 ]
 const { Title } = Typography
 
@@ -52,21 +52,22 @@ function Expore2() {
       </div>
 
       <div className="box-blur box-blur1 max-w-4xl m-auto text-center">
-        <div className="flex items-center justify-center gap-4 mt-8 mb-4">
+      <div className=" rundeyworldmobile">  
+        <div className=" flex-wrap flex lg:flex-row items-center justify-center gap-4 mt-8 mb-4">
           {logos.map((logo, index) => (
             <img src={logo} key={index} />
           ))}
         </div>
 
         <p className=" mb-4 text-white">Supports almost every programming language</p>
-
+    </div>
         <MidCTA
           title="Truly universal, runs everywhere & fast as native"
           subtitle="See more info about Runtime"
         />
       </div>
 
-      <div className="mt-16 text-center">
+      <div className="mt-16 text-center smallmargin">
         <p className=" mt-10  font-22 max-w-screen-md mx-auto">
           “This programming tool makes it easier for apps to work anywhere”
         </p>
