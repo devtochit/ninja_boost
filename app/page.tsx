@@ -3,17 +3,18 @@ import { useEffect,  } from 'react';
 import { NextPage } from 'next';
 import { Typography, Spin } from 'antd';
 import Footer from "@/components/Footer";
-import { motion, useAnimate, stagger, usePresence, AnimatePresence, useInView } from "framer-motion";
 import Head from 'next/head';
 import HeroSection from '@/Sections/HeroSection';
+import HeroTextSection from '@/Sections/RunWorldSection';
 import Community from '@/Sections/Community';
-import Expore2 from '@/Sections/Expore2';
-import Explore3 from '@/Sections/Explore3';
-import Explore4 from '@/Sections/Explore4';
-import Explore6 from '@/Sections/Explore6';
+
 import styles from '@/styles';
 import { Header } from "@/components/site-header"
-import Expore7 from '../Sections/Explore7';
+import Navbar from '@/components/menunav';
+import RunWorldSection from '@/Sections/RunWorldSection';
+import BetterTogetherSection from '@/Sections/BetterTogetherSection';
+import AbovetheCloud from '@/Sections/AbovetheCloud';
+import MIniFooter from '@/Sections/MIniFooter';
 
 const logos = [
    "/Logo/brandIcons/white/logo1.svg",
@@ -33,25 +34,24 @@ const Home: NextPage = () => {
         <title>Wasmer | Homepage.</title>
       </Head>
        <Header/>
-       <HeroSection />
-     <div className=" mt-80 mb-16">
+   
+      <HeroSection />
+     <div className=" communitymarginTop mb-16">
      <Community/>
      </div>
-     <div className="relative mt-40 mb-16"> 
-     <Expore2/>
-  
+   <div className="relative mt-40 mb-16"> 
+     <RunWorldSection/>
      </div>
       <div className="relative mt-20 mb-16"> 
-   
-     <Explore3/>
+     <BetterTogetherSection/>
      </div>
 
-     <div className=" relative">  
-     <Explore4/>
+       <div className=" relative">  
+     <AbovetheCloud/>
      </div>
 
-     <div className="  herosection relative mt-40 mb-16"> 
-     <Expore7/>
+       <div className="  herosection relative mt-40 mb-16"> 
+     <MIniFooter/>
      <Footer /> 
      </div>
     

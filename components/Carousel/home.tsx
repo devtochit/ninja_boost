@@ -10,7 +10,7 @@ import {
 } from "framer-motion";
 import Slider from "react-slick";
 
-import { CustomCard } from "../Card";
+import { CustomCard } from "../CustomCard";
 
 const LogoSlider = ({ rtl = false, initialSlide = 0, speed = 1500 }) => {
   const [scope, animate] = useAnimate();

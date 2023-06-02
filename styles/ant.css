@@ -78,13 +78,7 @@ p {
     /* @apply mb-1; */
 }
 
-.card {
-    background-color: #fff;
-    border-color: #0F051833;
-    box-shadow: 0px 8.91428px 38.6286px rgba(35, 16, 68, 0.05), 0px 2.6874px 15.7931px rgba(35, 16, 68, 0.05), 0px 1.11621px 10.0286px rgba(35, 16, 68, 0.015), 0px 0.40371px 7.42857px rgba(35, 16, 68, 0.001);
 
-    @apply rounded-2xl border;
-}
 
 .active-card {
     height: calc(100% - 4px);
@@ -106,45 +100,7 @@ p {
     @apply font-semibold;
 }
 
-.custom-btn-primary {
-    background-color: #0F0518;
-    color: #FFFFFF;
-    border-color: #0F0518;
-    border-radius: 50px !important;
-}
 
-.custom-btn-secondary {
-    background-color: #EFF1F6;
-    color: #0F0518;
-    border: 1px solid rgba(15, 5, 24, 0.2);
-    border-radius: 50px !important;
-}
-
-.custom-btn-secondary:hover,
-.custom-btn-secondary.hover {
-    background-color: rgba(15, 5, 24, 0.05);
-}
-
-.custom-btn-secondary:active,
-.custom-btn-secondary.pressed {
-    background-color: rgba(15, 5, 24, 0.07);
-}
-
-.custom-btn-tertiary {
-    background-color: rgba(15, 5, 24, 0.05);
-    color: #0F0518;
-    border: 1px solid rgba(15, 5, 24, 0.05);
-}
-
-.custom-btn-tertiary:hover,
-.custom-btn-tertiary.hover {
-    background-color: rgba(15, 5, 24, 0.07);
-}
-
-.custom-btn-tertiary:active,
-.custom-btn-tertiary.pressed {
-    background-color: rgba(15, 5, 24, 0.1);
-}
 
 .ant-btn-icon {
     margin-inline-end: 0px !important;
@@ -162,37 +118,8 @@ ol {
     list-style: decimal;
 }
 
-.code-card {
-    background-color: #1E1E1E;
-    overflow: hidden;
-}
-
-.code-card .ant-card-body {
-    padding: 0;
-}
-
-.tabset .tabset-button {
-    border: 1px solid #cccccc;
-    color: #cccccc;
-    @apply rounded-full px-4 py-1;
-}
-
-.tabset .tabset-button:hover {
-    color: white;
-
-}
-.checkback{
-    background: radial-gradient( rgba(251, 251, 252, 0) 100%);
-    mix-blend-mode: normal;
-opacity: 0.8;
-}
 
 
-.tabset .tabset-button.tabset-button-active {
-    color: black;
-    border-color: white;
-    background-color: white;
-}
 
 .custom-search .ant-input-group-addon {
     padding: 0;
@@ -381,12 +308,7 @@ code {
     color: white !important;
 }
 
-.installsec {
-    background-image: url(/Logo/editor-header.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
+
 
 .cta {
     line-height: 3.4rem;

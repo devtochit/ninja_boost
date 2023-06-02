@@ -5,7 +5,8 @@ import { TypingText } from "@/components/CustomTexts";
 import { motion } from 'framer-motion';
 import { fadeIn, staggerContainer } from "@/utils/motion";
 import styles from "@/styles";
-import { PrimaryButton } from "../components/Buttons";
+import { CustomPrimaryButton } from "../../components/Buttons/index";
+
 
 export default function Community() {
   return (
@@ -27,8 +28,8 @@ export default function Community() {
           >
            <div className="flex col gap-8  baseline justify-center">  
           <span className="font-semibold font-48 text-center leading-5 ">Create apps that</span>
-          <PrimaryButton
-            text="Run"
+          <CustomPrimaryButton
+            buttonText="Run"
             icon={<img src="/Logo/register.png" width="35" />}
             size="large"
             className="font-semibold font-48 "
@@ -37,8 +38,8 @@ export default function Community() {
           </div>
 
            <div className="flex  col  gap-8 baseline justify-center">  
-            <PrimaryButton
-            text="Publish"
+            <CustomPrimaryButton
+            buttonText="Publish"
             icon={<img src="/Logo/register.png" width="35" />}
             size="large"
             className="font-semibold font-48 "
@@ -48,8 +49,8 @@ export default function Community() {
           </div> 
 
      <div className="flex  col gap-8 baseline justify-center">   
-                   <PrimaryButton
-                    text="Edge"
+                   <CustomPrimaryButton
+                    buttonText="Edge"
                     icon={<img src="/Logo/edge.png" width="35" />}
                     size="large"
                     className="font-semibold font-48 "

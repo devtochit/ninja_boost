@@ -4,11 +4,12 @@ import { useEffect, useState } from "react"
 import { Spin, Typography } from "antd"
 import { motion } from 'framer-motion';
 
-import { PrimaryButton } from "@/components/Buttons"
+import { PrimaryButton } from "@/components/Buttons/index1"
 import { LargeCTA, MidCTA } from "@/components/CTA"
 import HomeSlider from "@/components/Carousel/home"
 import { fadeIn, staggerContainer } from '@/utils/motion';
 import styles from "@/styles";
+import { CustomPrimaryButton } from "@/components/Buttons";
 
 
 const logos = [
@@ -20,7 +21,7 @@ const logos = [
 ]
 const { Title } = Typography
 
-function Explore3() {
+function BetterTogetherSection() {
   return (
     <section className={`${styles.paddings} relative z-10`}>
     <motion.div
@@ -34,8 +35,8 @@ function Explore3() {
       <div className="container z-20 text-center">
         <div className={`${styles.flexCenter} flex-col  gap-2  justify-center`}>
           <img src="/Logo/section.svg" width={`1.4px`} />
-          <PrimaryButton
-            text="Registry"
+          <CustomPrimaryButton
+            buttonText="Registry"
             icon={<img src="/Logo/register.png" width="25" />}
             size="large"
           />
@@ -79,4 +80,4 @@ function Explore3() {
   )
 }
 
-export default Explore3
+export default BetterTogetherSection

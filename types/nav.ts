@@ -1,3 +1,5 @@
+import { ReactNode } from 'react';
+
 export interface NavItem {
   title: string
   href?: string
@@ -48,4 +50,22 @@ export interface MobileNavProps {
 
 export interface HeaderProps {
   loggedIn?: boolean
+}
+
+
+export interface NavItemProps {
+  text: string;
+  children?: ReactNode | ReactNode[];
+  dropdown?: boolean;
+}
+
+export interface MenuItemProps {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+}
+
+ export interface NavbarContextProps {
+  activeItem: string | null;
+  setActiveItem: (item: string | null) => void;
 }

@@ -3,7 +3,7 @@ import Link from "next/link"
 import { Divider } from "antd"
 import * as Icon from "react-feather"
 
-import LargeCard from "../Card/large"
+import LargeCard from "./large"
 
 interface CustomCardProps {
   title?: string | JSX.Element

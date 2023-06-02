@@ -1,9 +1,7 @@
 "use client"
 
 import {
-  Flyout,
   FlyoutSecondary,
-  FlyoutWithCols,
   FlyoutWithColsSecondary,
 } from "@/components/Menu"
 
@@ -90,28 +88,7 @@ const devsChildren = {
   ],
 }
 
-export const menuItems = [
-  {
-    label: "Products",
-    href: "/",
-    submenu: <Flyout submenu={productsChildren} />,
-  },
-  {
-    label: "Developers",
-    href: "/",
-    submenu: <FlyoutWithCols submenu={devsChildren} />,
-  },
-  {
-    label: "Packages",
-    href: "/",
-    submenu: null,
-  },
-  {
-    label: "Blog",
-    href: "/",
-    submenu: null,
-  },
-]
+
 
 export const menuMobileItems = [
   {

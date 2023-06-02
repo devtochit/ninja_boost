@@ -12,7 +12,7 @@ import {
 } from "framer-motion"
 import { fadeIn,staggerContainer } from "@/utils/motion"
 import styles from "@/styles"
-import { PrimaryButton } from "@/components/Buttons"
+import { PrimaryButton } from "@/components/Buttons/index1"
 import { LargeCTA, MidCTA } from "@/components/CTA"
 import { TypingText } from "@/components/CustomTexts";
 const logos = [
@@ -24,7 +24,7 @@ const logos = [
 ]
 const { Title } = Typography
 
-function Expore7() {
+function MIniFooter() {
   return (
     <motion.div
     variants={staggerContainer}
@@ -65,4 +65,4 @@ function Expore7() {
   )
 }
 
-export default Expore7
+export default MIniFooter

@@ -1,20 +1,14 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { Spin, Typography } from "antd"
-import {
-  AnimatePresence,
-  motion,
-  stagger,
-  useAnimate,
-  useInView,
-  usePresence,
-} from "framer-motion"
+import { Typography } from "antd"
+import {motion} from "framer-motion"
 import { fadeIn,staggerContainer } from "@/utils/motion"
 import styles from "@/styles"
-import { PrimaryButton } from "@/components/Buttons"
+import { PrimaryButton } from "@/components/Buttons/index1"
 import { LargeCTA, MidCTA } from "@/components/CTA"
 import { TypingText } from "@/components/CustomTexts";
+import { CustomPrimaryButton } from "@/components/Buttons"
 const logos = [
   "/Logo/brandIcons/whitebrandIcon/brandlogo1.svg",
   "/Logo/brandIcons/whitebrandIcon/brandlogo2.svg",
@@ -24,7 +18,7 @@ const logos = [
 ]
 const { Title } = Typography
 
-function Expore2() {
+function RunWorldSection() {
   return (
     <motion.div
     variants={staggerContainer}
@@ -37,8 +31,8 @@ function Expore2() {
       <div className="z-20 text-center">
         <div className={`${styles.flexCenter} flex-col gap-10 justify-center`}>
            <img src="/Logo/section.svg" width={`1.4px`} /> 
-          <PrimaryButton
-            text="Runtime"
+          <CustomPrimaryButton
+            buttonText="Runtime"
             icon={<img src="/Logo/runtime.png" width="25" />}
             size="large"
           /> 
@@ -79,4 +73,4 @@ function Expore2() {
   )
 }
 
-export default Expore2
+export default RunWorldSection

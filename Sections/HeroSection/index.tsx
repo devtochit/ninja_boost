@@ -1,12 +1,9 @@
 "use client"
 
 import { Typography } from "antd";
-import { GithubButton } from "@/components/Buttons";
+import { CustomGithubButton } from "@/components/Buttons";
 import Slider from "@/components/Carousel/try";
 import CustomEditorComponent from "@/components/Editor";
-import { TypingText } from "@/components/CustomTexts";
-import { motion } from 'framer-motion';
-import { fadeIn,staggerContainer } from "@/utils/motion";
 import styles from "@/styles";
 
 
@@ -15,6 +12,7 @@ const { Title } = Typography;
 
 const HeroSection = () => {
   return (
+
     <div className="herosection">
       <div className="titleshift">
         <Title className="font-semibold   text-[52px] text-center">
@@ -27,19 +25,18 @@ const HeroSection = () => {
           mt-5 items-stretch justify-center 
           gap-4 relative px-4 pt-10">
         <div className="max-w-lg mx-auto  blur-effect">
-          <CustomEditorComponent title={null} extra={false} />
+          <CustomEditorComponent/>
         </div>
         <div className={`${styles.flexCenter} relipostion text-center mt-4  gap-2 flex-col`}>
           <p className="mt-4 mobile">
-            Serve sandboxed WebAssembly apps anywhere through a single runtime
-            <TypingText title="and do in days what others do in months." textStyles=""/>
-            
+          Sandboxed applications for any device: browser, server, mobile,<br /> cloud, or edge, powered by WebAssembly
           </p>
+
           <p className="font-semibold text-lg text-black">
             Reach for the stars, we do too.
           </p>
          
-          <GithubButton size="large" />
+          <CustomGithubButton size="large" />
         </div>
       </div>
 

@@ -3,7 +3,7 @@
 import { NextPage } from "next"
 import { Typography } from "antd"
 
-import { GithubButton } from "../Buttons"
+import { GithubButton } from "../Buttons/index1"
 import Slider from "../Carousel/slick"
 import { EditorTabsetComponentWithOpts } from "../CodeEditor"
 

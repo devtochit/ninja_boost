@@ -39,6 +39,89 @@
   }
  
 }
+
+.communitymarginTop{
+  margin-top: 18rem;
+}
+.custom-primary-button {
+  background-color: #0F0518;
+  color: #FFFFFF;
+  border-color: #0F0518;
+  border-radius: 50px !important;
+}
+
+.custom-github-button {
+  background-color: #EFF1F6;
+  color: #0F0518;
+  border: 1px solid rgba(15, 5, 24, 0.2);
+  border-radius: 50px !important;
+}
+
+.custom-github-button:hover,
+.custom-github-button.hover {
+  background-color: rgba(15, 5, 24, 0.05);
+}
+
+.custom-github-button:active,
+.custom-github-button.pressed {
+  background-color: rgba(15, 5, 24, 0.07);
+}
+
+.custom-btn-tertiary {
+  background-color: rgba(15, 5, 24, 0.05);
+  color: #0F0518;
+  border: 1px solid rgba(15, 5, 24, 0.05);
+}
+
+.custom-btn-tertiary:hover,
+.custom-btn-tertiary.hover {
+  background-color: rgba(15, 5, 24, 0.07);
+}
+
+.custom-btn-tertiary:active,
+.custom-btn-tertiary.pressed {
+  background-color: rgba(15, 5, 24, 0.1);
+}
+
+.smallbtn .buttoneditor {
+  border: 1px solid #f7efef;
+  color: #cccccc;
+  @apply rounded-full px-4 py-1;
+}
+
+.smallbtn .buttoneditor:hover {
+  color: white;
+}
+.checkback{
+  background: radial-gradient( rgba(251, 251, 252, 0) 100%);
+  mix-blend-mode: normal;
+opacity: 0.8;
+}
+
+
+.smallbtn .buttoneditor.set-button-active {
+  color: black;
+  border-color: white;
+  background-color: white;
+}
+.codecardbackground {
+    background-color: #1E1E1E;
+    overflow: hidden;
+}
+.Editorbackground {
+  background-image: url(/Logo/editor-header.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.codecardbackground .ant-card-body {
+    padding: 0;
+}
+.codecardshadow {
+  border-color: #0F051833;
+  box-shadow: 0px 8.91428px 38.6286px rgba(35, 16, 68, 0.05), 0px 2.6874px 15.7931px rgba(35, 16, 68, 0.05), 0px 1.11621px 10.0286px rgba(35, 16, 68, 0.015), 0px 0.40371px 7.42857px rgba(35, 16, 68, 0.001);
+  @apply rounded-3xl border;
+}
 .background {
   background: linear-gradient(180deg, #EFF1F6 0%, #FCFCFE 100%);
 }
@@ -96,18 +179,21 @@ border: 1px solid #ada5b5;
 }
 .custommargin{
   margin-bottom: 30px;
-
 }
 
 @media (max-width: 750px) {
+  
   .mobile{
     font-size: 20px
+  }
+  .communitymarginTop{
+margin-top: 15rem;
   }
   .col{
     flex-direction: column;
     text-align: center;
     align-items: center;
-      gap:40px;
-      margin-top: 30px;
+      gap:23px;
+      margin-top: 10px;
   }
 }

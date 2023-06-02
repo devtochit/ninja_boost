@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react"
 import { Spin, Typography } from "antd"
-import { staggerContainer, fadeIn, planetVariants } from '../utils/motion';
+import { staggerContainer, fadeIn, planetVariants } from '../../utils/motion';
 
 import {
   AnimatePresence,
@@ -13,12 +13,13 @@ import {
   usePresence,
 } from "framer-motion"
 
-import { PrimaryButton } from "@/components/Buttons"
+import { PrimaryButton } from "@/components/Buttons/index1"
 import { LargeCTA, MidCTA } from "@/components/CTA"
 import HomeSlider from "@/components/Carousel/home"
 import styles from "@/styles";
+import { CustomPrimaryButton } from "@/components/Buttons";
 const { Title } = Typography
-function Explore4() {
+function AbovetheCloud() {
   return (
     <section className={`${styles.paddings} relative z-10`}>
     <motion.div
@@ -33,8 +34,8 @@ function Explore4() {
       <div className="z-20 text-center">
         <div className={`${styles.flexCenter} flex-col  gap-2  justify-center`}>
           <img src="/Logo/section.svg" width={`1.4px`} />
-          <PrimaryButton
-            text="Edge"
+          <CustomPrimaryButton
+            buttonText="Edge"
             icon={<img src="/Logo/edge.png" width="25" />}
             size="middle"
           />
@@ -80,4 +81,4 @@ function Explore4() {
   )
 }
 
-export default Explore4
+export default AbovetheCloud
