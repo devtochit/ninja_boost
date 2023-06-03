@@ -134,7 +134,7 @@ export const fadeIn = (
   },
 });
 
-export const planetVariants = (
+export const CloudsVariants = (
   direction: 'left' | 'right'
 ): Variants => ({
   hidden: {

@@ -2,23 +2,30 @@
 
 import { useEffect, useState } from "react"
 import { Typography } from "antd"
-import {motion} from "framer-motion"
+import {motion,Variants} from "framer-motion"
 import { fadeIn,staggerContainer } from "@/utils/motion"
 import styles from "@/styles"
 import { PrimaryButton } from "@/components/Buttons/index1"
-import { LargeCTA, MidCTA } from "@/components/CTA"
+import {MidCallToAction } from "@/components/CallToAction"
 import { TypingText } from "@/components/CustomTexts";
 import { CustomPrimaryButton } from "@/components/Buttons"
-const logos = [
-  "/Logo/brandIcons/whitebrandIcon/brandlogo1.svg",
-  "/Logo/brandIcons/whitebrandIcon/brandlogo2.svg",
-  "/Logo/brandIcons/whitebrandIcon/brandlogo3.svg",
-  "/Logo/brandIcons/whitebrandIcon/brandlogo4.svg",
-  "/Logo/brandIcons/whitebrandIcon/brandlogo5.svg",
-]
+import Image from "next/image"
+import {brandImages} from '@/lib/data'
+
+
 const { Title } = Typography
 
 function RunWorldSection() {
+  const staggerContainer: Variants = {
+    hidden: {},
+    show: {
+      transition: {
+        staggerChildren: 0,
+        delayChildren: 0,
+      },
+    },
+  };
+  
   return (
     <motion.div
     variants={staggerContainer}
@@ -29,33 +36,33 @@ function RunWorldSection() {
   >
     <div className= "relative container">
       <div className="z-20 text-center">
-        <div className={`${styles.flexCenter} flex-col gap-10 justify-center`}>
-           <img src="/Logo/section.svg" width={`1.4px`} /> 
+        <div className={`${styles.flexCenter} flex-col gap-2 justify-center`}>
+           <Image src="/Logo/section.svg" width={1} height={1} alt="section" /> 
           <CustomPrimaryButton
             buttonText="Runtime"
-            icon={<img src="/Logo/runtime.png" width="25" />}
+            icon={<img src="/Logo/global.png" width="25" />}
             size="large"
           /> 
 
           <Title className="mt-4 text-48">Run the world</Title>
-          <p className="custommarginbottom font-22 max-w-screen-md mx-auto leading-4">
+          <p className="custommarginbottom font-22 max-w-screen-md mx-auto leading-8">
             Using a binary for each platform and chip is the past. Rise above
             with <br /> lightweight containerized apps that simply run everywhere.
           </p>
         </div>
       </div>
 
-      <div className="box-blur box-blur1 max-w-4xl m-auto text-center">
+      <div className="background-blur runworld-blur max-w-4xl m-auto text-center">
       <div className=" rundeyworldmobile">  
         <div className=" flex-wrap flex lg:flex-row items-center justify-center gap-4 mt-8 mb-4">
-          {logos.map((logo, index) => (
+          {brandImages.map((logo, index) => (
             <img src={logo} key={index} />
           ))}
         </div>
 
         <p className=" custommargin text-white">Supports almost every programming language</p>
     </div>
-        <MidCTA
+        <MidCallToAction
           title="Truly universal, runs everywhere & fast as native"
           subtitle="See more info about Runtime"
         />
@@ -66,7 +73,7 @@ function RunWorldSection() {
           “This programming tool makes it easier for apps to work anywhere”
         </p>
 
-        <img src="/Logo/vercel.svg" className="  mx-auto opacity-50" />
+        <Image src="/Logo/vercel.svg" className="mx-auto opacity-50" width={136} height={32} alt="logo"/>
       </div>  
     </div>
     </motion.div>

@@ -188,18 +188,20 @@ ol {
     border-radius: inherit;
 }
 
-.box-blur {
+.background-blur {
     position: relative;
     @apply rounded-lg z-10;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
-.box-blur:hover:before {
-    transform: translate3d(0px, -20px, 0) scale(1.05);
-    transition: transform 400ms;
+.background-blur:hover:before {
     /* Updated: Specify the property to transition */
 }
 
-.box-blur:before {
+.background-blur:before {
     content: "";
     z-index: -1;
     position: absolute;
@@ -213,28 +215,26 @@ ol {
     border-radius: inherit;
 }
 
-.box-blur1:before {
+.runworld-blur:before {
     /* background: linear-gradient(90deg, #429342 0%, #7fe27f 100%); */
     background: conic-gradient(from -26.31deg at 50% 50%,#429342  0deg, #02C372 -150.12deg, #02C372  116deg, #EBC645 20.5deg, #02C372 183.75deg, #0B7046 223.13deg, #02C372 268.13deg,#02C372 315deg, #02C372 360deg);
-    transform: translate3d(0px, -20px, 0) scale(1);
 }
 
-.box-blur2:before {
-    background: linear-gradient(90deg, #E89786 0%, #F1D199 100%);
-    transform: translate3d(0px, -20px, 0) scale(1);
+.mainblur:before {
+    background: conic-gradient(from -26.31deg at 50% 50%, #EBC645 0deg, #B33112 43.12deg, #FA9E33 90deg, #B23112 142.5deg, #FA9E33 183.75deg, #EBC645 223.13deg, #B23112 268.13deg, #FA9E33 315deg, #EBC645 360deg);
+    
+    
 }
 
-.box-blur3:before {
+.main-blurcloud:before {
     background: conic-gradient(from -26.31deg at 50% 50%, #605DE9 0deg, #AC5CE0 43.12deg, #5D2A79 90deg, #605DE9 142.5deg, #AC5CE0 183.75deg, #5D2A79 223.13deg, #AC5CE0 268.13deg, #605DE9 315deg, #5D2A79 360deg);
-    transform: translate3d(0px, -20px, 0) scale(1);
 }
 
 .box-blur4:before {
     background: linear-gradient(90deg, #429342 0%, #e4752e 100%);
-    transform: translate3d(0px, 0px, 100) scale(1);
 }
 
-.blurrr
+
 
 
 /* 
@@ -242,7 +242,7 @@ ol {
 * stacking context. (For example, using the transform
 * property )
 */
-.box-blur::after {
+.background-blur::after {
     content: "";
     z-index: -1;
     position: absolute;

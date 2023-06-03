@@ -1,19 +1,28 @@
-import React from "react"
-import Link from "next/link"
-import { motion } from 'framer-motion';
+import React from "react";
+import Link from "next/link";
+import { Variants, motion } from 'framer-motion';
 import styles from '@/styles';
 import { footerVariants } from '@/utils/motion';
+
 const Footer = () => {
+  const staggerContainer: Variants = {
+    hidden: {},
+    show: {
+      transition: {
+        staggerChildren: 0,
+        delayChildren: 0,
+      },
+    },
+  };
   return (
     <motion.footer
-    variants={footerVariants}
-    initial="hidden"
-    whileInView="show"
-    className={`${styles.xPaddings} py-8 footer relative`}
-  >
-   
-      <div className="mx-auto w-full container p-4 py-6 lg:py-8">
-        <div className="footerreverse md:flex md:justify-between">
+      variants={footerVariants}
+      initial="hidden"
+      whileInView="show"
+      className={`${styles.xPaddings} py-8 footer relative`}
+    >
+      <div className="container mx-auto px-4 py-6 lg:py-8">
+        <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <Link href="#" className="flex items-center">
               <img
@@ -27,7 +36,7 @@ const Footer = () => {
               Making software universally accessible
             </p>
 
-            <div className="flex items-center gap-4 ">
+            <div className="flex items-center gap-4">
               <Link href="#">
                 <img
                   src="/Logo/twitter.svg"
@@ -39,19 +48,20 @@ const Footer = () => {
                 <img
                   src="/Logo/slack.svg"
                   className="h-5 opacity-50 hover:opacity-100"
-                  alt="Twitter"
+                  alt="Slack"
                 />
               </Link>
               <Link href="#">
                 <img
                   src="/Logo/githublight.svg"
                   className="h-5 opacity-50 hover:opacity-100"
-                  alt="Twitter"
+                  alt="GitHub"
                 />
               </Link>
             </div>
           </div>
-          <div className="grid grid-cols-3 gap-8 sm:gap-6 footerreverse">
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-6">
             <div>
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">
                 Explore
@@ -120,7 +130,9 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 justifybetween lg:my-8" />
+
+        <hr className="my-6 border-gray-300" />
+
         <div className="sm:flex sm:items-center gap-4 justifybetween">
           <Link href="#" className="hover:underline text-gray-500">
             Imprint
@@ -133,9 +145,8 @@ const Footer = () => {
           </Link>
         </div>
       </div>
-  
     </motion.footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

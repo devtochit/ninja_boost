@@ -1,18 +1,26 @@
 import React from "react";
 import dynamic from 'next/dynamic';
-
 import { TypingText } from "@/components/CustomTexts";
-import { motion } from 'framer-motion';
 import { fadeIn, staggerContainer } from "@/utils/motion";
 import styles from "@/styles";
 import { CustomPrimaryButton } from "../../components/Buttons/index";
+import {motion,Variants} from "framer-motion"
 
 
 export default function Community() {
+  const staggerContainer: Variants = {
+    hidden: {},
+    show: {
+      transition: {
+        staggerChildren: 0,
+        delayChildren: 0,
+      },
+    },
+  };
   return (
     <div className="container flex">
       <div className="font-semibold  text-black max-w-3xl mx-auto pt-10">
-        <div className={`${styles.flexCenters} flex-col  gap-6 flex-wrap`}>
+        <div className={`${styles.flexCenter} flex-col  gap-6 flex-wrap`}>
         <motion.div
       variants={staggerContainer}
       initial="hidden"
@@ -30,7 +38,7 @@ export default function Community() {
           <span className="font-semibold font-48 text-center leading-5 ">Create apps that</span>
           <CustomPrimaryButton
             buttonText="Run"
-            icon={<img src="/Logo/register.png" width="35" />}
+            icon={<img src="/Logo/global.png" width="35" />}
             size="large"
             className="font-semibold font-48 "
           />
@@ -40,7 +48,7 @@ export default function Community() {
            <div className="flex  col  gap-8 baseline justify-center">  
             <CustomPrimaryButton
             buttonText="Publish"
-            icon={<img src="/Logo/register.png" width="35" />}
+            icon={<img src="/Logo/publish.png" width="35" />}
             size="large"
             className="font-semibold font-48 "
 
@@ -51,7 +59,7 @@ export default function Community() {
      <div className="flex  col gap-8 baseline justify-center">   
                    <CustomPrimaryButton
                     buttonText="Edge"
-                    icon={<img src="/Logo/edge.png" width="35" />}
+                    icon={<img src="/Logo/community.png" width="35" />}
                     size="large"
                     className="font-semibold font-48 "
 

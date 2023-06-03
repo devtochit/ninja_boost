@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 import { Spin, Typography } from "antd"
 import {
   AnimatePresence,
+  Variants,
   motion,
   stagger,
   useAnimate,
@@ -12,19 +13,21 @@ import {
 } from "framer-motion"
 import { fadeIn,staggerContainer } from "@/utils/motion"
 import styles from "@/styles"
-import { PrimaryButton } from "@/components/Buttons/index1"
-import { LargeCTA, MidCTA } from "@/components/CTA"
+import { LargeCallToAction } from "@/components/CallToAction"
 import { TypingText } from "@/components/CustomTexts";
-const logos = [
-  "/Logo/brandIcons/white/logo1.svg",
-  "/Logo/brandIcons/white/logo2.svg",
-  "/Logo/brandIcons/white/logo3.svg",
-  "/Logo/brandIcons/white/logo4.svg",
-  "/Logo/brandIcons/white/logo5.svg",
-]
+
 const { Title } = Typography
 
 function MIniFooter() {
+  const staggerContainer: Variants = {
+    hidden: {},
+    show: {
+      transition: {
+        staggerChildren: 0,
+        delayChildren: 0,
+      },
+    },
+  };
   return (
     <motion.div
     variants={staggerContainer}
@@ -51,7 +54,7 @@ function MIniFooter() {
       </div>
       <div className="max-w-4xl m-auto text-left pt-12 pb-20">
       <div className=" blur-effect  z-10">
-        <LargeCTA
+        <LargeCallToAction
           title="Get Started"
           subtitle="Join the vibrant Wasmer community. Create your fist package, run it from the shell and deploy it to the Edge"
         />

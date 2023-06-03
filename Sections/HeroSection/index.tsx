@@ -2,7 +2,7 @@
 
 import { Typography } from "antd";
 import { CustomGithubButton } from "@/components/Buttons";
-import Slider from "@/components/Carousel/try";
+import HeroSlider from "@/components/Slider/HeroSlider";
 import CustomEditorComponent from "@/components/Editor";
 import styles from "@/styles";
 
@@ -43,15 +43,15 @@ const HeroSection = () => {
       <div className="brandicons-section">
         <div className="grid grid-cols-2">
           <div className="col-span-1">
-            <Slider slidesToShow={7} labeled={true} rtl={true} speed={4000} />
-            <Slider
+            <HeroSlider slidesToShow={7} labeled={true} rtl={true} speed={4000} />
+            <HeroSlider
               slidesToShow={7}
               labeled={true}
               rtl={true}
               speed={4500}
               initialSlide={9}
             />
-            <Slider
+            <HeroSlider
               slidesToShow={7}
               labeled={true}
               rtl={true}
@@ -60,14 +60,14 @@ const HeroSection = () => {
             />
           </div>
           <div className="col-span-1">
-            <Slider slidesToShow={10} rtl={false} speed={4500} />
-            <Slider
+            <HeroSlider slidesToShow={10} rtl={false} speed={4500} />
+            <HeroSlider
               slidesToShow={10}
               rtl={false}
               speed={5500}
               initialSlide={9}
             />
-            <Slider
+            <HeroSlider
               slidesToShow={10}
               rtl={false}
               speed={6500}

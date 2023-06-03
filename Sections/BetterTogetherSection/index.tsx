@@ -1,27 +1,29 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { Spin, Typography } from "antd"
-import { motion } from 'framer-motion';
-
+import { Typography } from "antd"
 import { PrimaryButton } from "@/components/Buttons/index1"
-import { LargeCTA, MidCTA } from "@/components/CTA"
-import HomeSlider from "@/components/Carousel/home"
-import { fadeIn, staggerContainer } from '@/utils/motion';
+import {  MidCallToAction } from "@/components/CallToAction"
+import { fadeIn, } from '@/utils/motion';
 import styles from "@/styles";
 import { CustomPrimaryButton } from "@/components/Buttons";
+import Image from "next/image"
+import {motion,Variants} from "framer-motion"
+import BetterSlider from "@/components/Slider/BetterSlider"
 
 
-const logos = [
-  "/Logo/brandIcons/white/logo1.svg",
-  "/Logo/brandIcons/white/logo2.svg",
-  "/Logo/brandIcons/white/logo3.svg",
-  "/Logo/brandIcons/white/logo4.svg",
-  "/Logo/brandIcons/white/logo5.svg",
-]
 const { Title } = Typography
 
 function BetterTogetherSection() {
+  const staggerContainer: Variants = {
+    hidden: {},
+    show: {
+      transition: {
+        staggerChildren: 0,
+        delayChildren: 0,
+      },
+    },
+  };
   return (
     <section className={`${styles.paddings} relative z-10`}>
     <motion.div
@@ -32,12 +34,12 @@ function BetterTogetherSection() {
       className={`${styles.innerWidth} mx-auto flex flex-col`}>
 
     <div className="">
-      <div className="container z-20 text-center">
-        <div className={`${styles.flexCenter} flex-col  gap-2  justify-center`}>
-          <img src="/Logo/section.svg" width={`1.4px`} />
+      <div className="container z-20 text-center px-10">
+        <div className={`${styles.flexCenter} flex-col  gap-4  justify-center`}>
+        <Image src="/Logo/section.svg" width={1} height={1} alt="section" /> 
           <CustomPrimaryButton
             buttonText="Registry"
-            icon={<img src="/Logo/register.png" width="25" />}
+            icon={<img src="/Logo/publish.png" width="25" />}
             size="large"
           />
 
@@ -53,15 +55,16 @@ function BetterTogetherSection() {
         className="relative  flex flex-col w-full "
       >
 
-      <div className="box-blur box-blur2">
+      <div className="background-blur mainblur">
         <div className="custommargin">
-          <HomeSlider speed={2000} />
+          <BetterSlider speed={2000} />
         </div>
 
-        <div className="max-w-4xl m-auto text-center px-4">
-          <MidCTA
+        <div className="max-w-4xl m-auto text-center px-16">
+          <MidCallToAction
             title="All languages, fully containerized & collaborative"
             subtitle="See more info about Runtime"
+            className=''
           />
         </div>
       </div>
@@ -71,7 +74,7 @@ function BetterTogetherSection() {
           “This programming tool makes it easier for apps to work anywhere”
         </p>
 
-        <img src="/Logo/vercel.svg" className="mx-auto opacity-50" />
+        <Image src="/Logo/vercel.svg" className="mx-auto opacity-50" width={136} height={32} alt="logo"/>
       </div>
       </motion.div>
     </div>

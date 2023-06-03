@@ -45,17 +45,17 @@ const NavItem: React.FC<NavItemProps> = ({
       className={`px-5 relative cursor-pointer `}
       onHoverStart={handleHoverStart}
       onHoverEnd={handleHoverEnd}
-      onClick={handleClick}
+      // onClick={handleClick}
 
     >
       <Link href="/" className="text-sm font-semibold leading-6 text-gray-500 relative">
         {text}
       </Link>
 
-      {isHovered && dropdown && showSubmenu && (
+      {isHovered && dropdown  && (
         <motion.div
           layoutId="menu"
-          className={`absolute top-[38px] visible shadow-lg border-1 border-grey-200 bg-white -left-2/4 rounded-sm `}
+          className={`absolute top-[38px] visible shadow-lg z-10 border-1 border-grey-200 bg-white -left-2/4 rounded-md `}
           variants={NavItemVariants}
           style={{ minWidth: 385 }}
           initial="hidden"

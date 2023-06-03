@@ -1,25 +1,24 @@
 "use client"
 
-import { useEffect, useState } from "react"
-import { Spin, Typography } from "antd"
-import { staggerContainer, fadeIn, planetVariants } from '../../utils/motion';
-
-import {
-  AnimatePresence,
-  motion,
-  stagger,
-  useAnimate,
-  useInView,
-  usePresence,
-} from "framer-motion"
-
-import { PrimaryButton } from "@/components/Buttons/index1"
-import { LargeCTA, MidCTA } from "@/components/CTA"
-import HomeSlider from "@/components/Carousel/home"
+import {  Typography } from "antd"
+import { staggerContainer, fadeIn, CloudsVariants } from '../../utils/motion';
+import Image from "next/image"
+import {motion,Variants} from "framer-motion"
+import { MidCallToAction } from "@/components/CallToAction"
 import styles from "@/styles";
 import { CustomPrimaryButton } from "@/components/Buttons";
 const { Title } = Typography
+
 function AbovetheCloud() {
+  const staggerContainer: Variants = {
+    hidden: {},
+    show: {
+      transition: {
+        staggerChildren: 0,
+        delayChildren: 0,
+      },
+    },
+  };
   return (
     <section className={`${styles.paddings} relative z-10`}>
     <motion.div
@@ -33,11 +32,11 @@ function AbovetheCloud() {
     <div className="container">
       <div className="z-20 text-center">
         <div className={`${styles.flexCenter} flex-col  gap-2  justify-center`}>
-          <img src="/Logo/section.svg" width={`1.4px`} />
+        <Image src="/Logo/section.svg" width={1} height={1} alt="section" /> 
           <CustomPrimaryButton
             buttonText="Edge"
-            icon={<img src="/Logo/edge.png" width="25" />}
-            size="middle"
+            icon={<Image src="/Logo/community.png" width={25} height={25}  alt="edge"/>}
+            size="large"
           />
 
           <Title className="mt-4 text-48">Above the clouds</Title>
@@ -48,24 +47,26 @@ function AbovetheCloud() {
         </div>
       </div>
       <motion.div
-        variants={planetVariants('left')}
+        variants={CloudsVariants('left')}
         className={`flex-1 ${styles.flexCenter}`}
       > 
-      <img src="/Logo/cloudimg.svg" className="mx-auto" />
+      <img src="/Logo/cloud.svg" className="mx-auto" alt="cloudimg" />
+      
+
       </motion.div>
-      <div className="box-blur box-blur3 max-w-4xl m-auto text-center">
+      <div className="background-blur main-blurcloud max-w-4xl m-auto text-center">
         <div className={`${styles.flexCenter} col justify-center gap-4 mt-8 mb-4`}>
         <div className={`${styles.flexCenter} gap-4 justify-content`}>
-            <img src="/Logo/tone.svg" />
+            <Image src="/Logo/spare.svg" width={20} height={20} alt="tone" />
             <div className="text-white flex-1">Infinite scalability</div>
           </div>
           <div className={`${styles.flexCenter} gap-4 justify-content`}>
-            <img src="/Logo/fire.svg" />
+            <Image src="/Logo/flames.svg" width={20} height={20} alt="fire" />
             <div className="text-white flex-1">Instant cold starts</div>
           </div>
         </div>
 
-        <MidCTA title="Faster, cheaper & indefinitely scalable" />
+        <MidCallToAction className="" title="Faster, cheaper & indefinitely scalable" />
       </div>
 
       <div className="mt-16 smallmargin text-center">
@@ -73,7 +74,7 @@ function AbovetheCloud() {
           “This programming tool makes it easier for apps to work anywhere”
         </p>
 
-        <img src="/Logo/vercel.svg" className="mx-auto opacity-50" />
+        <Image src="/Logo/vercel.svg" className="mx-auto opacity-50" width={136} height={32} alt="logo"/>
       </div>
     </div>
     </motion.div>

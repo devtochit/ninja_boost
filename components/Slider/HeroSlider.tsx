@@ -9,7 +9,7 @@ import { LogoSliderProps } from "../../types/data"
 
 const { Text } = Typography
 
-const LogoSlider: React.FC<LogoSliderProps> = ({
+const HeroSlider: React.FC<LogoSliderProps> = ({
   rtl = false,
   initialSlide = 0,
   speed = 1500,
@@ -88,4 +88,4 @@ const LogoSlider: React.FC<LogoSliderProps> = ({
   )
 }
 
-export default LogoSlider
+export default HeroSlider

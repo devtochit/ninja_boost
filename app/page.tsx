@@ -34,26 +34,26 @@ const Home: NextPage = () => {
         <title>Wasmer | Homepage.</title>
       </Head>
        <Header/>
-   
+{/*    
       <HeroSection />
-     <div className=" communitymarginTop mb-16">
+    <div className=" communitymarginTop mb-16">
      <Community/>
      </div>
    <div className="relative mt-40 mb-16"> 
      <RunWorldSection/>
-     </div>
-      <div className="relative mt-20 mb-16"> 
+    </div> */}
+        <div className="relative mt-20 mb-16"> 
      <BetterTogetherSection/>
      </div>
 
-       <div className=" relative">  
+     {/* <div className=" relative">  
      <AbovetheCloud/>
-     </div>
+     </div> */}
 
-       <div className="  herosection relative mt-40 mb-16"> 
+       {/* <div className="  herosection relative mt-40 mb-16"> 
      <MIniFooter/>
      <Footer /> 
-     </div>
+     </div>  */}
     
     
 
