@@ -1,12 +1,13 @@
-export interface Logo {
-  label: string | null
-  value: string
-}
 
-export interface LogoSliderProps {
-  rtl?: boolean
-  initialSlide?: number
-  speed?: number
-  labeled?: boolean
-  slidesToShow?: number
+
+
+export interface LargeCallToActionProps {
+  title?: string
+  subtitle?: string
+  className:string
+}
+export interface   MidCallToActionProps {
+  title?: string
+  subtitle?: string,
+  className:string
 }

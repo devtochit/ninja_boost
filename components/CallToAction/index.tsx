@@ -1,14 +1,10 @@
 import React from "react"
 import Link from "next/link"
 import { Typography } from "antd"
+import { LargeCallToActionProps,MidCallToActionProps } from "@/types/data"
 
 const { Title } = Typography
 
-interface LargeCallToActionProps {
-  title?: string
-  subtitle?: string
-  className:string
-}
 
 export const LargeCallToAction: React.FC<LargeCallToActionProps> = ({
   title = "",
@@ -28,11 +24,7 @@ export const LargeCallToAction: React.FC<LargeCallToActionProps> = ({
   )
 }
 
-interface MidCallToActionProps {
-  title?: string
-  subtitle?: string,
-  className:string
-}
+
 
 export const MidCallToAction: React.FC<MidCallToActionProps> = ({
   title = " ",
